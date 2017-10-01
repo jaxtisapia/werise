@@ -272,3 +272,27 @@ video.video {
      object-position: 50% 50%;
   width: 100%;
   height: 100%; }
+
+.margin-medium{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.margin-very-small{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.list-items>li{
+  padding: 10px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.list-items>li>span{
+  font-weight: 400;
+}
+
+.paragraph-simple{
+  color: #5f5751;
+  font-size: medium;
+}

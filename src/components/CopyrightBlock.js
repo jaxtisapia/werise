@@ -10,7 +10,7 @@ export class CopyrightBlock extends Component{
         return (
             <div className="split-credit">
 
-                <p>&copy;2017 <a href="#">Your Name</a> - <a href="https://onepagelove.com/split">Split Template</a> by <a href="https://onepagelove.com">One Page Love</a></p>
+                <p>&copy;2017 <a href="#">WERISE FOUNDATION</a> - by <a href="https://www.asqii.com">ASQII Inc</a></p>
 
             </div>
         );

@@ -5,7 +5,7 @@ import React, {Component} from 'react'
 import {OurMissionModal} from "./modals/OurMissionModal";
 import {OurVisionModal} from "./modals/OurVisionModal";
 import {ContactUsModal} from "./modals/ContactUsModal";
-import {DonationModal} from "./modals/DonationModal";
+import {OurAchievementsModal} from "./modals/OurAchievementsModal";
 
 export class FooterBlock extends Component {
 
@@ -16,15 +16,15 @@ export class FooterBlock extends Component {
             missionModalVisible: false,
             visionModalVisible: false,
             contactUsModalVisible: false,
-            donationModalVisible: false,
+            achievementsModalVisible: false,
         };
 
         this.showOurMission = this.showOurMission.bind(this);
         this.hideOurMission = this.hideOurMission.bind(this);
         this.showOurVision = this.showOurVision.bind(this);
         this.hideOurVision = this.hideOurVision.bind(this);
-        this.showDonation = this.showDonation.bind(this);
-        this.hideDonation = this.hideDonation.bind(this);
+ this.showOurAchievement= this.showOurAchievement.bind(this);
+        this.hideOurAchievement = this.hideOurAchievement.bind(this);
         this.showContactUs = this.showContactUs.bind(this);
         this.hideContactUs = this.hideContactUs.bind(this);
 
@@ -37,6 +37,14 @@ export class FooterBlock extends Component {
 
     hideOurMission() {
         this.setState({missionModalVisible: false})
+    }
+    showOurAchievement() {
+        console.log("done");
+        this.setState({achievementsModalVisible: true})
+    }
+
+    hideOurAchievement() {
+        this.setState({achievementsModalVisible: false})
     }
 
     showOurVision() {
@@ -55,32 +63,17 @@ export class FooterBlock extends Component {
         this.setState({contactUsModalVisible: false})
     }
 
-    showDonation() {
-        this.setState({donationModalVisible: true})
-    }
-
-    hideDonation() {
-        this.setState({donationModalVisible: false})
-    }
-
-    consoleTest(){
-        console.log(this.state.missionModalVisible);
-    };
-
     render() {
 
         return (
 
             <div className="split-lists">
 
-                {this.consoleTest}
-
-
                 {/*<OurMissionModal visible={this.state.missionModalVisible}/>*/}
                 <OurMissionModal visible={this.state.missionModalVisible} disable={this.hideOurMission}/>
                 <OurVisionModal visible={this.state.visionModalVisible} disable={this.hideOurVision}/>
                 <ContactUsModal visible={this.state.contactUsModalVisible} disable={this.hideContactUs}/>
-               <DonationModal visible={this.state.donationModalVisible} disable={this.hideDonation}/>
+                <OurAchievementsModal visible={this.state.achievementsModalVisible} disable={this.hideOurAchievement}/>
 
                 <div className="split-list">
 
@@ -89,9 +82,13 @@ export class FooterBlock extends Component {
                     <ul>
                         <li><a onClick={this.showOurMission}>Our Mission</a></li>
                         <li><a onClick={this.showOurVision}>Our Vision</a></li>
+                        <li><a onClick={this.showOurAchievement}>Our Achievements</a></li>
                         <li><a onClick={this.showContactUs}>Contact Us</a></li>
                     </ul>
 
+                </div>
+
+                <div className="split-list">
                 </div>
 
                 <div className="split-list">
@@ -107,14 +104,6 @@ export class FooterBlock extends Component {
                 </div>
 
                 <div className="split-list">
-
-                    {/*<h3>AFFILIATIONS</h3>*/}
-
-                    {/*<ul>*/}
-                        {/*<li><a href="#">Link One</a></li>*/}
-                        {/*<li><a href="#">Link Two</a></li>*/}
-                        {/*<li><a href="#">Link Three</a></li>*/}
-                    {/*</ul>*/}
 
                 </div>
 
