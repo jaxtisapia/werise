@@ -2,7 +2,7 @@
  * Created by user on 2017-09-29.
  */
 import React, {Component} from 'react'
-import logo from '../img/logo.png'
+import logo from '../img/logo.jpg'
 
 
 export class HeaderBlock extends Component{
@@ -10,7 +10,7 @@ export class HeaderBlock extends Component{
     render (){
 
         return (
-            <div className="split-intro">
+            <div className="split-intro" >
 
                 <img style={{maxWidth: '200px', maxHeight: '200px'}} src={logo} />
 

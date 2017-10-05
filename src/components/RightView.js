@@ -12,7 +12,7 @@ export class RightView extends Component{
     render (){
 
         return (
-            <div className="split-content">
+            <div className="split-content" style={{background:'white'}}>
 
                 <div className="split-content-vertically-center">
 

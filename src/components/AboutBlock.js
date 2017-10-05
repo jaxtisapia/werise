@@ -33,11 +33,8 @@ export class AboutBlock extends Component{
 
                 <DonationModal visible={this.state.donationModalVisible} disable={this.hideDonation}/>
 
-                <p>WERISE is an NGO that blah blah blah. WE design the best of principles to the ratio of the soldiers at the cinema. The best prices you can't contest
-
-                    Started from the bottom, now we have branches in United States of America, Japan, Korea and many other countries as well. The text is a test to prove eligibilty of the context of words you might later use</p>
-
-                <p> ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, malesuada congue, ullamcorper massa, sit amet lacinia nibh enim sed massa. </p>
+                <p>WERISE Foundation is a Non-Governmental Organisation that advocates for persons with disabilities, kids with special needs and orphans, by assisting them with the necessary resources, to create an all inclusive environment.</p><br/>
+                <p>No matter the circumstances or situation you find yourself, with the right push, you can do whatever you want to be in life!</p>
 
             </div>
 
