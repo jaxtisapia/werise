@@ -96,9 +96,9 @@ export class FooterBlock extends Component {
                     <h3>Social</h3>
 
                     <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
+                        {/*<li><a target="_blank" href="#">Twitter</a></li>*/}
+                        <li><a target="_blank"  href="https://www.facebook.com/werisefoundation/">Facebook</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/werisefoundation_gh/">Instagram</a></li>
                     </ul>
 
                 </div>
