@@ -60,3 +60,15 @@
 .main-container{
   min-height: 100vh;
 }
+
+.main-container .ant-modal-header{
+    background-color: #000;
+}
+
+.minuter-modal>div{
+    background-color: rgba(0, 0, 0, 0.36);
+}
+
+.ant-modal-mask{
+    background-color: rgba(0, 0, 0, 0.88) !important;
+}

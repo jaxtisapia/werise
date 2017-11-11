@@ -6,6 +6,7 @@ import {OurMissionModal} from "./modals/OurMissionModal";
 import {OurVisionModal} from "./modals/OurVisionModal";
 import {ContactUsModal} from "./modals/ContactUsModal";
 import {OurAchievementsModal} from "./modals/OurAchievementsModal";
+import {GalleryModal} from "./modals/GalleryModal";
 
 export class FooterBlock extends Component {
 
@@ -17,16 +18,19 @@ export class FooterBlock extends Component {
             visionModalVisible: false,
             contactUsModalVisible: false,
             achievementsModalVisible: false,
+            galleryModalVisible: false
         };
 
         this.showOurMission = this.showOurMission.bind(this);
         this.hideOurMission = this.hideOurMission.bind(this);
         this.showOurVision = this.showOurVision.bind(this);
         this.hideOurVision = this.hideOurVision.bind(this);
- this.showOurAchievement= this.showOurAchievement.bind(this);
+        this.showOurAchievement= this.showOurAchievement.bind(this);
         this.hideOurAchievement = this.hideOurAchievement.bind(this);
         this.showContactUs = this.showContactUs.bind(this);
         this.hideContactUs = this.hideContactUs.bind(this);
+        this.showGallery = this.showGallery.bind(this);
+        this.hideGallery = this.hideGallery.bind(this);
 
     }
 
@@ -63,6 +67,14 @@ export class FooterBlock extends Component {
         this.setState({contactUsModalVisible: false})
     }
 
+    showGallery(){
+        this.setState({galleryModalVisible: true})
+    }
+
+    hideGallery(){
+        this.setState({galleryModalVisible: false})
+    }
+
     render() {
 
         return (
@@ -74,6 +86,8 @@ export class FooterBlock extends Component {
                 <OurVisionModal visible={this.state.visionModalVisible} disable={this.hideOurVision}/>
                 <ContactUsModal visible={this.state.contactUsModalVisible} disable={this.hideContactUs}/>
                 <OurAchievementsModal visible={this.state.achievementsModalVisible} disable={this.hideOurAchievement}/>
+
+                <GalleryModal visible={this.state.galleryModalVisible} disable={this.hideGallery}/>
 
                 <div className="split-list">
 
@@ -97,8 +111,9 @@ export class FooterBlock extends Component {
 
                     <ul>
                         {/*<li><a target="_blank" href="#">Twitter</a></li>*/}
-                        <li><a target="_blank"  href="https://www.facebook.com/werisefoundation/">Facebook</a></li>
+                        <li><a target="_blank"  href="https://www.facebook.com/werisefoundationtech/">Facebook</a></li>
                         <li><a target="_blank" href="https://www.instagram.com/werisefoundation_gh/">Instagram</a></li>
+                        <li><a onClick={this.showGallery}>Events and Programmes</a></li>
                     </ul>
 
                 </div>

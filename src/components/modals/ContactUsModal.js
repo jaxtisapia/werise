@@ -20,10 +20,13 @@ export function ContactUsModal(props){
                PRESIDENT, WERISE FOUNDATION<br/>
                werisefoundation@hotmail.com<br/>
                   0270551916</li>
+<li><span> Mr. Hayford Oppong</span><br/>
+               GENERAL SECRETARY, WERISE FOUNDATION<br/>
+                  0543405394</li>
 
               <li><span> DR EMMANUEL MARFO</span><br/>
                SENIOR RESEARCH AND POLICY SCIENTIST/CSIR<br/>
-               MP..OFORIKURO<br/>
+               MP..OFORIKUROM<br/>
                   0244627274</li>
 
 
