@@ -2,8 +2,8 @@
  * Created by user on 2017-09-29.
  */
 import React, {Component} from 'react'
-import logo from '../img/logo.jpg'
 
+let logo = "http://res.cloudinary.com/du43ktr2x/image/upload/v1507317161/logo_ilgtdl.jpg";
 
 export class HeaderBlock extends Component{
 

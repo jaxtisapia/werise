@@ -126,6 +126,4 @@ export class FooterBlock extends Component {
 
         );
 
-    }
-
-}
+    }}
